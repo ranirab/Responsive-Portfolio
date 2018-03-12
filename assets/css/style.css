@@ -132,3 +132,84 @@ input[type=submit]:hover {
 
     float: left;
 }
+/*
+  The width of the wrapper will be 1024px
+  at browser widths above 768px
+*/
+.wrapper {
+    /* Box-model */
+    width: 1024px;
+  
+    /* Positioning */
+    margin: 40px auto;
+  }
+  
+  #main-content,
+  #sidebar {
+    /* Box-model */
+    width: 500px;
+    padding: 30px;
+  }
+  
+  #main-content {
+    /* Positioning */
+    float: left;
+  
+    /* Visual */
+    background: #fff;
+  }
+  
+  #sidebar {
+    /* Positioning */
+    float: right;
+  
+    /* Visual */
+    background: #eee;
+  }
+  @media screen and (max-width: 980px) {
+    body {
+      background-color: rgb(58, 170, 114);
+    }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: rgb(82, 130, 170);
+    }
+
+  @media screen and (max-width: 640px) {
+    body {
+      background-color: rgb(221, 31, 31);
+    }
+    .wrapper {
+      /* Box-model */
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+  }
+  
+  /* Additional Screen Sizes */
+  
+  /* Width at 980px and below */
+  @media screen and (max-width: 980px) {
+    /* screen size specific styles go here */
+  }
+  
+  /* Width at 768px and below */
+  @media screen and (max-width: 768px) {
+    /* screen size specific styles go here */
+  }
+   /* Width at 768px and below */
+   @media screen and (max-width: 640px) {
+    /* screen size specific styles go here */
+
+
+  
