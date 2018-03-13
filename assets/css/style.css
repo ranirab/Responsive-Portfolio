@@ -6,6 +6,13 @@ body {
   background: url("regal.png");
 }
 
+.wrapper {
+  height: auto;
+  height: 100%;
+  min-height:100%;
+  margin: 0 auto -105px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -121,13 +128,13 @@ h3, h2 {
 
 #main-container {
   padding-top: 130px;
-  min-height: calc(100vh - 70px);
+
 }
 
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -201,13 +208,9 @@ h3,
   border-bottom: 0;
 }
 
-.wrapper {
-  height: auto;
-  height: 100%;
-  min-height:100%;
-  margin: 0 auto -105px;
 
-}
+
+
 
 .auth-image {
   float: left;
@@ -255,6 +258,22 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+.footer {
+  background: #666666;
+  height: 40px;
+  border-top: solid 7px #4aaaa5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;   
+  
+}
+#copyright {
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+  color: white;
 }
 
 @media screen and (max-width: 980px) {
